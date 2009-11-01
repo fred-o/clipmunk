@@ -7,4 +7,5 @@
             :components
             ((:file "library")
              (:file "types")
-             (:file "vect" :depends-on ("types"))))))
+             (:file "vect" :depends-on ("types"))
+             (:file "bounding-box" :depends-on ("types"))))))
