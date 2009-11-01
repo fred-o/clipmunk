@@ -1,4 +1,7 @@
 (asdf:defsystem cl-chipmunk
   :depends-on (#:cffi)
   :components
-  ((:file "packages")))
+  ((:file "packages")
+   (:module "bindings"
+            :components
+            ((:file "cffi")))))
