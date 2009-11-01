@@ -4,4 +4,4 @@
   ((:file "packages")
    (:module "bindings"
             :components
-            ((:file "cffi")))))
+            ((:file "library")))))
