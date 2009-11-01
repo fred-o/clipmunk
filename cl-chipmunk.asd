@@ -5,4 +5,5 @@
    (:module "bindings"
             :components
             ((:file "library")
-             (:file "types")))))
+             (:file "types")
+             (:file "vect" :depends-on ("types"))))))
