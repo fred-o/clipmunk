@@ -8,4 +8,5 @@
             ((:file "library")
              (:file "types")
              (:file "vect" :depends-on ("types"))
-             (:file "bounding-box" :depends-on ("types"))))))
+             (:file "bounding-box" :depends-on ("types"))
+             (:file "body" :depends-on ("types" "vect"))))))
