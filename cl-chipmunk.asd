@@ -4,4 +4,5 @@
   ((:file "packages")
    (:module "bindings"
             :components
-            ((:file "library")))))
+            ((:file "library")
+             (:file "types")))))
