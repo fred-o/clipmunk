@@ -3,6 +3,7 @@
   :components
   ((:file "packages")
    (:module "bindings"
+            :depends-on ("packages")
             :components
             ((:file "library")
              (:file "types")
