@@ -1,3 +1,6 @@
+(defpackage #:cl-chipmunk-bindings
+  (:use :cl :cffi))
+
 (defpackage #:cl-chipmunk
-  (:use :cl)
+  (:use :cl :cl-chipmunk-bindings)
   (:nicknames :chipmunk :chip))
