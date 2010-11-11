@@ -1,9 +1,10 @@
 (in-package :cl-chipmunk-bindings)
 
-(defcstruct vect
-  "Simple two-dimensional vector"
-  (x cp-float)
-  (y cp-float))
+(defmacro with-cpv ((name x y) &body body)
+  `(with-foreign-object (,name 'vect)
+     (with-foreign-slots ((x y) ,name vect)
+       (setf x ,x y ,y)
+       ,@body)))
 
 (defcfun ("cpvlength" vect-length) cp-float
   (vector vect))
