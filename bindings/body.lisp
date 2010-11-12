@@ -1,4 +1,4 @@
-(in-package :cl-chipmunk-bindings)
+x(in-package :cl-chipmunk-bindings)
 
 (defctype body-velocity-function :pointer
   "Function used to integrate a body's velocity.")

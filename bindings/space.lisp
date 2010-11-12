@@ -89,3 +89,8 @@
   (space :pointer)
   (dim cp-float)
   (count :int))
+
+;; update the space
+(defcfun ("cpSpaceStep" space-step) :void
+  (space :pointer)
+  (dt cp-float))

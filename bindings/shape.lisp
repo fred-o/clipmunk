@@ -15,8 +15,6 @@
   (next :pointer)
   (hashid cp-hash-value))
 
-
-
 (defcstruct segment-shape
   (shape shape)
   (a vect)
@@ -27,6 +25,25 @@
   (tb vect)
   (tn vect))
 
+;; circle shapes
+(defcstruct circle-shape
+  (shape shape)
+  (c vect)
+  (r vect)
+  (tc vect))
+
+(defcfun ("cpCircleShapeAlloc" circle-shape-alloc) :pointer)
+(defcfun ("cpCircleShapeInit" circle-shape-init) :pointer
+  (circle :pointer)
+  (body :pointer)
+  (radius cp-float)
+  (offset vect))
+(defcfun ("cpCircleShapeNew" circle-shape-new) :pointer
+  (body :pointer)
+  (radius cp-float)
+  (offset vect))
+
+;; segment shapes
 (defcfun ("cpSegmentShapeAlloc" segment-shape-alloc) :pointer)
 (defcfun ("cpSegmentShapeInit" segment-shape-init) :pointer
   (seg :pointer)
