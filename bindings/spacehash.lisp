@@ -16,4 +16,4 @@
   (table :pointer)
   (pooled-bins :pointer)
   (allocated-buffers :pointer)
-  (stamp cp-timestamp))b
+  (stamp cp-timestamp))
