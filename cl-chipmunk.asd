@@ -3,4 +3,5 @@
   :components
   ((:file "chipmunk")
    (:file "wrapper")
-   (:file "bindings" :depends-on ("chipmunk" "wrapper"))))
+   (:file "bindings" :depends-on ("chipmunk" "wrapper"))
+   (:file "exports" :depends-on ("bindings"))))

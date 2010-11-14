@@ -1,6 +1,5 @@
 %module bindings
 
-%feature("intern_function","1");
 %feature("intern_function", "chipmunk-lispify");
 
 %insert("lisphead") %{
