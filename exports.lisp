@@ -1,4 +1,4 @@
-(in-package :cl-chipmunk)
+(in-package :cl-chipmunk.bindings)
 
 (cl:export '#.(chipmunk-lispify "cpVect" 'classname))
 (cl:export '#.(chipmunk-lispify "cpBB" 'classname))

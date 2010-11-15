@@ -2,6 +2,7 @@
   :depends-on (#:cffi)
   :components
   ((:file "chipmunk")
-   (:file "wrapper")
+   (:file "wrapper" :depends-on ("chipmunk"))
    (:file "bindings" :depends-on ("chipmunk" "wrapper"))
-   (:file "exports" :depends-on ("bindings"))))
+   (:file "exports" :depends-on ("bindings"))
+   (:file "accessors" :depends-on ("bindings" "exports"))))

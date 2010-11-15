@@ -1,6 +1,12 @@
 (defpackage #:cl-chipmunk
   (:use :cl :cffi))
 
+(defpackage #:cl-chipmunk.bindings
+  (:use :cl :cffi))
+
+(defpackage #:cl-chipmunk.accessors
+  (:use :cl :cffi :cl-chipmunk.bindings))
+
 (in-package :cl-chipmunk)
 
 (define-foreign-library chipmunk
