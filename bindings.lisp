@@ -22,23 +22,6 @@
 
 (cffi:defcfun ("cpInitChipmunk" #.(chipmunk-lispify "cpInitChipmunk" 'function)) :void)
 
-(cffi:defcfun ("cpMomentForCircle" #.(chipmunk-lispify "cpMomentForCircle" 'function)) :double
-  (m :double)
-  (r1 :double)
-  (r2 :double)
-  (offset :pointer))
-
-(cffi:defcfun ("cpMomentForSegment" #.(chipmunk-lispify "cpMomentForSegment" 'function)) :double
-  (m :double)
-  (a :pointer)
-  (b :pointer))
-
-(cffi:defcfun ("cpMomentForPoly" #.(chipmunk-lispify "cpMomentForPoly" 'function)) :double
-  (m :double)
-  (numVerts :int)
-  (verts :pointer)
-  (offset :pointer))
-
 (cffi:defcfun ("cpMomentForBox" #.(chipmunk-lispify "cpMomentForBox" 'function)) :double
   (m :double)
   (width :double)

@@ -6,9 +6,16 @@
 (in-package :cl-chipmunk.bindings)
 %}
 
+//  ignored 
 %ignore "INFINITY";
 %ignore "CP_HASH_COEF";
 
+// ignored, because we supply our own definitions instead of the SWIG-generated ones
+%ignore "cpMomentForCircle";
+%ignore "cpMomentForSegment";
+%ignore "cpMomentForPoly";
+
+// ignored, because they are inline static, and not accessible through CFFI
 %ignore "cpvzero";
 %ignore "cpfmax";
 %ignore "cpfmin";
