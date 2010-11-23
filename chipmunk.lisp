@@ -1,13 +1,13 @@
-(defpackage #:cl-chipmunk
+(defpackage #:clipmunk
   (:use :cl :cffi))
 
-(defpackage #:cl-chipmunk.bindings
+(defpackage #:clipmunk.bindings
   (:use :cl :cffi))
 
-(defpackage #:cl-chipmunk.accessors
-  (:use :cl :cffi :cl-chipmunk.bindings))
+(defpackage #:clipmunk.accessors
+  (:use :cl :cffi :clipmunk.bindings))
 
-(in-package :cl-chipmunk)
+(in-package :clipmunk)
 
 (define-foreign-library chipmunk
   (:unix (:or "libchipmunk.so.5.1" "libchipmunk.so" "libchipmunk.dylib"))

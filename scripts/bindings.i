@@ -3,7 +3,7 @@
 %feature("intern_function", "chipmunk-lispify");
 
 %insert("lisphead") %{
-(in-package :cl-chipmunk.bindings)
+(in-package :clipmunk.bindings)
 %}
 
 //  ignored 

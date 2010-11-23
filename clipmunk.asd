@@ -1,4 +1,4 @@
-(asdf:defsystem cl-chipmunk
+(asdf:defsystem clipmunk
   :depends-on (#:cffi)
   :components
   ((:file "chipmunk")
